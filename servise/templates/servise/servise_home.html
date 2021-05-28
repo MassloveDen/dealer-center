@@ -1,0 +1,32 @@
+{% extends 'DC/head.html' %}
+
+{% block title %}Услуги дилера{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h2>Услуги дилера</h2>
+        {% if servise %}
+            {% for el in servise %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <button class="btn btn-warning">Услуги центра</button>
+                    <br>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Нет услуг</p>
+        {% endif %}
+    <br>
+        <br>
+        <p>Добавить</p>
+        <button class="btn btn-warning">Продажа</button>
+        <br>
+        <button class="btn btn-warning">Ремонт</button>
+        <br>
+        <button class="btn btn-warning">Склад запчастей</button>
+        <br>
+        <button class="btn btn-warning">Склад авто</button>
+        <br>
+
+    </div>
+{% endblock %}

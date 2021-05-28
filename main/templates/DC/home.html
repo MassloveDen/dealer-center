@@ -1,0 +1,54 @@
+{% extends 'DC/head.html' %}
+
+{% block title %}
+Дилеры
+{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h2>{{ title }}</h2>
+
+    <button class="btn btn-warning">Подробнее</button>
+    {% for el in values %}
+        <p>{{el}}</p>
+    {% endfor %}
+
+    {% for el in obj %}
+        <p>{{ el }}</p>
+    {% endfor %}
+</div>
+<div class="features">
+    <h2>Марки</h2>
+    <button class="btn btn-warning">Подробнее</button>
+</div>
+<div class="features">
+    <h2>Продажи</h2>
+
+    <button class="btn btn-warning">Подробнее</button>
+</div>
+<div class="features">
+    <h2>Модель</h2>
+
+    <button class="btn btn-warning">Подробнее</button>
+</div>
+<div class="features">
+    <h2>Ремонт</h2>
+
+    <button class="btn btn-warning">Подробнее</button>
+</div>
+<div class="features">
+    <h2>Склад авто</h2>
+
+    <button class="btn btn-warning">Подробнее</button>
+</div>
+<div class="features">
+    <h2>Склад запчастей</h2>
+
+    <button class="btn btn-warning">Подробнее</button>
+</div>
+<div class="features">
+    <h2>Цвет</h2>
+
+    <button class="btn btn-warning">Подробнее</button>
+</div>
+{% endblock %}
